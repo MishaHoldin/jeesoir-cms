@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "banner": {
+      "displayName": "banner",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner"
+    },
+    "swiperItems": {
+      "displayName": "swiper-items",
+      "type": "component",
+      "repeatable": false,
+      "component": "swiper-items.swiper-items"
+    },
+    "itemBlock": {
+      "displayName": "item-block",
+      "type": "component",
+      "repeatable": false,
+      "component": "item-block.item-block"
+    },
+    "swiperItems2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "swiper-items.swiper-items"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "component": "item-block.item-block"
+    },
+    "swiperItems3": {
+      "type": "component",
+      "repeatable": false,
+      "component": "swiper-items.swiper-items"
+    }
+  }
+}

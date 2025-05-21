@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "returns",
+  "info": {
+    "singularName": "return",
+    "pluralName": "returns",
+    "displayName": "return"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

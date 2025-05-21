@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_swiper_items_swiper_items",
+  "info": {
+    "displayName": "swiper-items"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "btnLink": {
+      "type": "text"
+    }
+  }
+}
