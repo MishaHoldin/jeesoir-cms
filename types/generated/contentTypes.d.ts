@@ -502,6 +502,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
 export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
   collectionName: 'orders';
   info: {
+    description: '';
     displayName: 'order';
     pluralName: 'orders';
     singularName: 'order';
@@ -522,6 +523,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     phone: Schema.Attribute.String;
     postOffice: Schema.Attribute.String;
+    productNumber: Schema.Attribute.Text;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     total: Schema.Attribute.Integer;
@@ -599,6 +601,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Name: Schema.Attribute.String;
     order: Schema.Attribute.Relation<'manyToOne', 'api::order.order'>;
     price: Schema.Attribute.String;
+    productNumber: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     same_product: Schema.Attribute.Relation<
       'manyToMany',
